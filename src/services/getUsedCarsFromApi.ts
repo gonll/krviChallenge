@@ -1,5 +1,5 @@
 import { AxiosResponse } from "axios";
-import { IEnpointResponse } from "./Types";
+import { ICar } from "../common/Types";
 
 const axios = require('axios').default;
 
@@ -19,7 +19,7 @@ const getUsedCarsFromApi = async (site: string): Promise<any> => {
             console.log('Error getUsedCarsFromApi service: ', error);  //Acá en realidad, reportaríamos el error en vez de loguearlo por consola.
             throw error;
         })
-    const data: IEnpointResponse[] = response.data;
+    const data: ICar[] = response.data;
 
     return data;
 }
