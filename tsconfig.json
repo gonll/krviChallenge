@@ -2,9 +2,13 @@
     "compilerOptions": {
         "target": "es6",
         "module": "commonjs",
-        "strict": true,
         "outDir": "dist",
         "rootDir": "src",
-        "sourceMap": true
+        "strict": true,
+        "sourceMap": true,
+        "esModuleInterop": true,
+        "allowSyntheticDefaultImports": true,
+        "skipLibCheck": true,
+        "forceConsistentCasingInFileNames": true
     }
 }
