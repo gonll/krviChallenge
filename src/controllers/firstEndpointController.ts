@@ -1,7 +1,7 @@
 import { Request, Response } from "express";
-import { ICar } from "../common/Types";
+import { ICar } from "../common/types";
 import getUsedCarsFromApi from "../services/getUsedCarsFromApi";
-import { IPossibleFilters } from './Types'
+import { IPossibleFilters } from './types'
 
 const firstEndpointController = async (req: Request, res: Response) => {
     if (!req.query.site || typeof req.query.site !== 'string') {

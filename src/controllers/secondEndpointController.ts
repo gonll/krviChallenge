@@ -1,5 +1,5 @@
 import { Request, Response } from "express";
-import { ICar } from "../common/Types";
+import { ICar } from "../common/types";
 import getUsedCarsFromApi from "../services/getUsedCarsFromApi";
 
 const secondEndpointController = async (req: Request, res: Response) => {

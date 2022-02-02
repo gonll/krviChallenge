@@ -1,5 +1,5 @@
 import { AxiosResponse } from "axios";
-import { ICar } from "../common/Types";
+import { ICar } from "../common/types";
 
 const axios = require('axios').default;
 
