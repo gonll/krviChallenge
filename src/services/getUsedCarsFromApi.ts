@@ -13,14 +13,15 @@ const getUsedCarsFromApi = async (site: string): Promise<any> => {
             site: site
         }
     }
-
-    const response: AxiosResponse = await axios.get(`${endPoint}`, axiosConfig)
-        .catch((error: { origin: string }) => {
-            console.log('Error getUsedCarsFromApi service: ', error);  //Acá en realidad, reportaríamos el error en vez de loguearlo por consola.
-            throw error;
-        })
-    const data: ICar[] = response.data;
-
+    
+    let data: ICar[] = [];
+    try {
+        const response: AxiosResponse = await axios.get(`${endPoint}`, axiosConfig);
+        data = response?.data || [];
+    } catch (error) {
+        console.log('Error getUsedCarsFromApi service: ', error);  //Acá en realidad, reportaríamos el error en vez de loguearlo por consola.
+        throw error;
+    }
     return data;
 }
 
