@@ -1,6 +1,3 @@
-import request from 'supertest';
-import { ICar } from '../../src/common/Types';
-import server from '../../src/index';
 import getUsedCarsFromApi from '../../src/services/getUsedCarsFromApi';
 const axios = require('axios');
 require('dotenv').config();
