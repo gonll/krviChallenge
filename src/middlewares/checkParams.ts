@@ -9,9 +9,9 @@ import { Request, Response, NextFunction } from 'express';
     Luego acá solo recorreríamos ese array y validamos los parámetros. Pero me parece over-engineering para este challenge.
 */
 
-export const checkParams = ()=> 
+export const checkParams = () =>
     (req: Request, res: Response, next: NextFunction) => {
-        switch (req.route.path){
+        switch (req.route.path) {
             case '/firstEndpoint':
                 Object.keys(req.query).includes('site') ? next() : res.status(400).send('Missing site parameter');
                 break;
@@ -22,4 +22,3 @@ export const checkParams = ()=>
                 break;
         }
     }
-    
