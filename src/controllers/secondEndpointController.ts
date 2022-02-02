@@ -1,7 +1,7 @@
 import { Request, Response } from "express";
 import getUsedCarsFromApi from "../services/getUsedCarsFromApi";
 
-const firstEndpointController = async (req: Request, res: Response) => {
+const secondEndpointController = async (req: Request, res: Response) => {
     if(!req.query.site || typeof req.query.site !== 'string') {
         /* 
             Esta verificación en realidad se hace en el middleware.
@@ -15,10 +15,10 @@ const firstEndpointController = async (req: Request, res: Response) => {
             console.log('response: ', response[0]);
             res.status(200).send(response);
         } catch (error) {
-            console.log('Error FirstEndpointController',error);  //Acá en realidad, reportaríamos el error en vez de loguearlo por consola.
+            console.log('Error secondEndpointController',error);  //Acá en realidad, reportaríamos el error en vez de loguearlo por consola.
             res.status(500).send('Ocurrió un error al procesar el pedido.');
         }
     }
 }
 
-export default firstEndpointController;
+export default secondEndpointController;
