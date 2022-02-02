@@ -1,4 +1,4 @@
-export interface IEnpointResponse {
+export interface ICar {
     id?: number;
     city?: string;
     state?: string;
