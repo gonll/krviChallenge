@@ -9,7 +9,7 @@
     "forceConsistentCasingInFileNames": true,
     "strict": true,
     "noEmit": false,
-    "outDir": "app"
+    "outDir": "dist"
   },
   "include": [
     "src/*.ts"
