@@ -15,12 +15,8 @@ const firstEndpointController = async (req: Request, res: Response) => {
         try {
             const apiResponse: ICar[] = await getUsedCarsFromApi(site);
 
-            let carList: ICar[] = apiResponse.sort((car1: any, car2: any) => {
-                return car1.price - car2.price;
-            });
-            carList = apiResponse.sort((car1: any, car2: any) => {
-                return parseInt(car2.year.substring(0, 4)) - parseInt(car1.year.substring(0, 4));
-            });
+            let carList: ICar[] = apiResponse.sort((car1: any, car2: any) => car1.price - car2.price);
+            carList = apiResponse.sort((car1: any, car2: any) => parseInt(car2.year.substring(0, 4)) - parseInt(car1.year.substring(0, 4)));
 
             let possibleFilters: IPossibleFilters = {
                 city: [],
