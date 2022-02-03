@@ -20,7 +20,7 @@ Si en realidad Ud prefiere correr la versión productiva, deberá desde su conso
 > tsc
 
 y luego
-> node node dist/index.js
+> node dist/index.js
 
 Tenga en cuenta que para correr la versión traspilada deberá tener instalado typescript globalmente, lo que puede hacer corriendo en su consola:
 > npm install -g typescript 
