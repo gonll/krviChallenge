@@ -5,7 +5,7 @@ Puede testear ya mismo este microservicio desplegado en Heroku:
 
 https://krv-challenge.herokuapp.com
 
-Los endpoints solicitados y expuestos son:
+Ejemplos de los endpoints solicitados y expuestos son:
 
 https://krv-challenge.herokuapp.com/firstEndpoint?site=ar
 
