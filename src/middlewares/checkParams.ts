@@ -12,13 +12,14 @@ import { Request, Response, NextFunction } from 'express';
 export const checkParams = () =>
     (req: Request, res: Response, next: NextFunction) => {
         switch (req.route.path) {
-            case '/firstEndpoint':
-                Object.keys(req.query).includes('site') ? next() : res.status(400).send('Missing site parameter');
+            case '/carsBySite':
+                Object.keys(req.query).includes('site') ? next() : res.status(400).send('En el request, falta el parametro Site');
                 break;
-            case '/secondEndpoint':
+            case '/carsBySiteIds':
                 (Object.keys(req.query).includes('site') && Object.keys(req.query).includes('ids')) ? next() : res.status(400).send('Los parámetros site y ids son obligatorios en el request y deben ser de tipo string.');
                 break;
             default:
+                // Este caso nunca sucede.
                 break;
         }
     }
