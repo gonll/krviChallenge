@@ -1,4 +1,4 @@
-import getUsedCarsFromApi from '../../src/services/getUsedCarsFromApi';
+import getUsedCarsFromApi from '../../src/datasources/getUsedCarsFromApi';
 const axios = require('axios');
 require('dotenv').config();
 
