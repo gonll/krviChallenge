@@ -37,6 +37,5 @@ Una vez instaladas las dependencias del proyecto (ver punto 1), deberá correr e
 
 Este proyecto tiene comentarios en linea con el mismo código únicamente por ser un challenge y para poder explicar mi proceso, pero es entendible que en un entorno productivo uno se adapta a las determinaciones de estilo del negocio.
 Todos los archivos fueron formateados sin trailing spaces y con indentaciones de 4 espacios.
-En algunos casos se usaron ternarios y en otros if estandares.
 También se implementó un middleware demostrativo aunque no necesariamente indispensable.
 
