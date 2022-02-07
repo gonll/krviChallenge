@@ -7,9 +7,9 @@ https://krv-challenge.herokuapp.com
 
 Ejemplos de los endpoints solicitados y expuestos son:
 
-https://krv-challenge.herokuapp.com/firstEndpoint?site=ar
+https://krv-challenge.herokuapp.com/carsBySite?site=ar
 
-https://krv-challenge.herokuapp.com/secondEndpoint?site=ar&ids=330964,22627843340
+https://krv-challenge.herokuapp.com/carsBySiteIds?site=ar&ids=330964,22627843340
 
 **1) Como desplegar localmente este MS?**
 
